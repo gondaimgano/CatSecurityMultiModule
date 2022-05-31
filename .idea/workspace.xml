@@ -4,36 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ControlPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/DisplayPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/DisplayPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ImagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ImagePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/SensorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/SensorPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/udacity/catpoint/core/AlarmStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/udacity/catpoint/core/AlarmStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/udacity/catpoint/core/ArmingStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/udacity/catpoint/core/ArmingStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/udacity/catpoint/core/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/udacity/catpoint/core/Sensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/udacity/catpoint/core/SensorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/udacity/catpoint/core/SensorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/udacity/catpoint/core/StatusListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/udacity/catpoint/core/StatusListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/image/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/src/main/java/com/udacity/catpoint/image/AwsImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/image/src/main/java/com/udacity/catpoint/image/AwsImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/src/main/java/com/udacity/catpoint/image/FakeImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/image/src/main/java/com/udacity/catpoint/image/FakeImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/src/main/java/com/udacity/catpoint/image/StyleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/image/src/main/java/com/udacity/catpoint/image/StyleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/image/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/LocalImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/LocalImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/PretendDatabaseSecurityRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/PretendDatabaseSecurityRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/SecurityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/SecurityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/SecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,9 +80,10 @@
       <command value="mvn package -Dmaven.test.skip=true" />
       <command value="mvn clean package:single" />
       <command value="mvn clean assembly:single" />
+      <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar">
     <configuration name="CatpointApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.app.CatpointApp" />
       <module name="app" />
@@ -155,8 +128,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JAR Application.CatSecurityMultiModule-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="JAR Application.app-1.0-SNAPSHOT.jar" />
         <item itemvalue="Application.CatpointApp" />
@@ -176,8 +149,16 @@
       <workItem from="1653919629644" duration="459000" />
       <workItem from="1653978492688" duration="703000" />
       <workItem from="1653984766219" duration="9000" />
-      <workItem from="1653988310589" duration="4723000" />
+      <workItem from="1653988310589" duration="5494000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1653994661709</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653994661709</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,5 +174,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>
