@@ -1,4 +1,4 @@
-package com.udacity.catpoint.data;
+package com.udacity.catpoint.security;
 
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
@@ -7,13 +7,14 @@ import java.lang.reflect.Type;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.prefs.Preferences;
+import com.udacity.catpoint.core.*;
 
 /**
  * Fake repository implementation for demo purposes. Stores state information in local
  * memory and writes it to user preferences between app loads. This implementation is
  * intentionally a little hard to use in unit tests, so watch out!
  */
-public class PretendDatabaseSecurityRepositoryImpl implements SecurityRepository{
+public class PretendDatabaseSecurityRepositoryImpl implements SecurityRepository {
 
     private Set<Sensor> sensors;
     private AlarmStatus alarmStatus;

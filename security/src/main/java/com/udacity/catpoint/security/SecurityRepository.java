@@ -1,4 +1,8 @@
-package com.udacity.catpoint.data;
+package com.udacity.catpoint.security;
+
+import com.udacity.catpoint.core.AlarmStatus;
+import com.udacity.catpoint.core.ArmingStatus;
+import com.udacity.catpoint.core.Sensor;
 
 import java.util.Set;
 
