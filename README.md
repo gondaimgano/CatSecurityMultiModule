@@ -1,7 +1,7 @@
 # CatSecurityMultiModule
 Last Project for the Udacity Java Nanodegree 
 
-The project comprises of 4 modules namely: <br/>
+The project comprises 4 modules namely: <br/>
 
 `app` this is the module that runs the whole app with its dependencies <br/>
 `core` this module holds all the model classes which are used by other modules <br/>
