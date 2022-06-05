@@ -103,7 +103,7 @@
       <command value="mvn install site" />
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.spotbugs.html">
+  <component name="RunManager" selected="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar">
     <configuration name="SecurityServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="security" />
       <extension name="coverage">
@@ -156,15 +156,11 @@
     </configuration>
     <list>
       <item itemvalue="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
-      <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="JavaScript Debug.spotbugs.html" />
       <item itemvalue="JUnit.SecurityServiceTest" />
       <item itemvalue="Maven.CatSecurityMultiModule [clean]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.spotbugs.html" />
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Maven.CatSecurityMultiModule [clean]" />
         <item itemvalue="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="JUnit.SecurityServiceTest" />
