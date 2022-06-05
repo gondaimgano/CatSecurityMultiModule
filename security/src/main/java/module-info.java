@@ -5,4 +5,5 @@ module com.udacity.catpoint.security {
     requires com.udacity.catpoint.core;
     requires java.desktop;
     exports com.udacity.catpoint.security;
+    opens com.udacity.catpoint.security;
 }

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="refactoring and adding of tests" />
+    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="added screenshot executable_jar.png">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/module-info.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +18,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="module-info" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
@@ -64,6 +68,7 @@
       <recent name="C:\Users\gondai.mgano\IntelliJIDEAProjects\CatSecurityMultiModule\security\src\main\java\com\udacity\catpoint\security" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\gondai.mgano\IntelliJIDEAProjects\CatSecurityMultiModule\image\src\main\java" />
       <recent name="C:\Users\gondai.mgano\IntelliJIDEAProjects\CatSecurityMultiModule\security\src\main\java" />
     </key>
@@ -90,9 +95,11 @@
       <command value="mvn clean package:single" />
       <command value="mvn clean assembly:single" />
       <command value="mvn clean package" />
+      <command value="mvn surefire:test" />
+      <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar">
+  <component name="RunManager" selected="Maven.CatSecurityMultiModule [clean]">
     <configuration name="SecurityServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="security" />
       <extension name="coverage">
@@ -124,24 +131,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecurityServiceTest.whenUpdateSensors_systemArmed_deactivateAllSensors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="security" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.udacity.catpoint.security.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.udacity.catpoint.security" />
-      <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.security.SecurityServiceTest" />
-      <option name="METHOD_NAME" value="whenUpdateSensors_systemArmed_deactivateAllSensors(com.udacity.catpoint.core.ArmingStatus)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="app-1.0-SNAPSHOT-jar-with-dependencies.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CatSecurityMultiModule [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
       <method v="2" />
     </configuration>
     <configuration name="[Local] com.udacity.catpoint.security.SecurityServiceTest::systemArmedResetSensorsToInactive" type="aws.lambda" factoryName="Local" temporary="true" nameIsGenerated="true">
@@ -179,16 +195,16 @@
       <item itemvalue="AWS Lambda.[Local] com.udacity.catpoint.security.SecurityServiceTest::systemArmedResetSensorsToInactive" />
       <item itemvalue="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
       <item itemvalue="JUnit.SecurityServiceTest.whenAlarmStatus_AlarmArmedAndSensorActivated_ReturnAlarmStatusPending" />
-      <item itemvalue="JUnit.SecurityServiceTest.whenUpdateSensors_systemArmed_deactivateAllSensors" />
       <item itemvalue="JUnit.SecurityServiceTest" />
+      <item itemvalue="Maven.CatSecurityMultiModule [clean]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Maven.CatSecurityMultiModule [clean]" />
         <item itemvalue="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="JUnit.SecurityServiceTest" />
         <item itemvalue="JUnit.SecurityServiceTest.whenAlarmStatus_AlarmArmedAndSensorActivated_ReturnAlarmStatusPending" />
         <item itemvalue="AWS Lambda.[Local] com.udacity.catpoint.security.SecurityServiceTest::systemArmedResetSensorsToInactive" />
-        <item itemvalue="JUnit.SecurityServiceTest.whenUpdateSensors_systemArmed_deactivateAllSensors" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654431862864</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added screenshot executable_jar.png">
+      <created>1654432321039</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654432321039</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +279,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="wording changes" />
     <MESSAGE value="refactoring and adding of tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring and adding of tests" />
+    <MESSAGE value="added screenshot executable_jar.png" />
+    <option name="LAST_COMMIT_MESSAGE" value="added screenshot executable_jar.png" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CatSecurityMultiModule$SecurityServiceTest.ic" NAME="SecurityServiceTest Coverage Results" MODIFIED="1654341898483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
