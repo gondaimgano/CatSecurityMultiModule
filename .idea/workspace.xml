@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="wording changes">
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/LocalImageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/SecurityServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ControlPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/DisplayPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/DisplayPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ImagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ImagePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/SensorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/SensorPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/src/main/java/com/udacity/catpoint/image/StyleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/StyleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/LocalImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/LocalImageService.java" afterDir="false" />
-    </list>
+    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="refactoring and adding of tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654172503848</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactoring and adding of tests">
+      <created>1654431862864</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654431862864</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +255,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="wording changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="wording changes" />
+    <MESSAGE value="refactoring and adding of tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring and adding of tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CatSecurityMultiModule$SecurityServiceTest.ic" NAME="SecurityServiceTest Coverage Results" MODIFIED="1654341898483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
