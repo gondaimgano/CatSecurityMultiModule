@@ -2,7 +2,6 @@ package com.udacity.catpoint.app;
 
 import com.udacity.catpoint.core.AlarmStatus;
 import com.udacity.catpoint.core.StatusListener;
-import com.udacity.catpoint.image.StyleService;
 import com.udacity.catpoint.security.SecurityService;
 import net.miginfocom.swing.MigLayout;
 

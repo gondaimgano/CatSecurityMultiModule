@@ -1,4 +1,4 @@
-package com.udacity.catpoint.image;
+package com.udacity.catpoint.app;
 
 import java.awt.*;
 
