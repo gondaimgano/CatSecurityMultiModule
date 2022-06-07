@@ -147,21 +147,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecurityServiceTest.whenAlarmStatus_AlarmArmedAndSensorActivated_ReturnAlarmStatusPending (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="security" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.udacity.catpoint.security.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.udacity.catpoint.security" />
-      <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.security.SecurityServiceTest" />
-      <option name="METHOD_NAME" value="whenAlarmStatus_AlarmArmedAndSensorActivated_ReturnAlarmStatusPending(com.udacity.catpoint.core.ArmingStatus)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="app-1.0-SNAPSHOT-jar-with-dependencies.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+      <method v="2" />
     </configuration>
     <configuration name="[Local] com.udacity.catpoint.security.SecurityServiceTest::systemArmedResetSensorsToInactive" type="aws.lambda" factoryName="Local" temporary="true" nameIsGenerated="true">
       <option name="credentialProviderId" />
@@ -196,18 +184,18 @@
     </configuration>
     <list>
       <item itemvalue="AWS Lambda.[Local] com.udacity.catpoint.security.SecurityServiceTest::systemArmedResetSensorsToInactive" />
+      <item itemvalue="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
       <item itemvalue="JUnit.SecurityServiceTest.whenAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState" />
       <item itemvalue="JUnit.SecurityServiceTest.whenAlarmState_systemActivatedWhileAlreadyActiveAndAlarmPending_changeToAlarmState" />
-      <item itemvalue="JUnit.SecurityServiceTest.whenAlarmStatus_AlarmArmedAndSensorActivated_ReturnAlarmStatusPending (1)" />
       <item itemvalue="JUnit.SecurityServiceTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SecurityServiceTest" />
+        <item itemvalue="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="AWS Lambda.[Local] com.udacity.catpoint.security.SecurityServiceTest::systemArmedResetSensorsToInactive" />
         <item itemvalue="JUnit.SecurityServiceTest.whenAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState" />
         <item itemvalue="JUnit.SecurityServiceTest.whenAlarmState_systemActivatedWhileAlreadyActiveAndAlarmPending_changeToAlarmState" />
-        <item itemvalue="JUnit.SecurityServiceTest.whenAlarmStatus_AlarmArmedAndSensorActivated_ReturnAlarmStatusPending (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654601330222</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="SecurityServiceTest refinement">
+      <created>1654602151882</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654602151882</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
