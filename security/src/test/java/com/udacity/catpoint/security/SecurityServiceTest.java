@@ -5,6 +5,7 @@ import com.udacity.catpoint.core.ArmingStatus;
 import com.udacity.catpoint.core.Sensor;
 import com.udacity.catpoint.core.SensorType;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -52,6 +53,10 @@ public class SecurityServiceTest {
         }).collect(Collectors.toSet());
     }
 
+    private BufferedImage produceFakeBufferedImage(){
+        return  mock(BufferedImage.class);
+    }
+
     @BeforeEach
     void init() {
         securityService = new SecurityService(securityRepository, localImageService);
@@ -61,23 +66,24 @@ public class SecurityServiceTest {
 
     @ParameterizedTest //covers 1
     @EnumSource(value = ArmingStatus.class, names = {"ARMED_HOME", "ARMED_AWAY"})
-    void whenAlarmStatus_AlarmArmedAndSensorActivated_ReturnAlarmStatusPending(ArmingStatus armingStatus) {
+    void whenAlarmStatus_AlarmIsArmedAndSensorIsActivated_ReturnAlarmStatusPending(ArmingStatus armingStatus) {
         when(securityService.getArmingStatus()).thenReturn(armingStatus);
         when(securityService.getAlarmStatus()).thenReturn(AlarmStatus.NO_ALARM);
         securityService.changeSensorActivationStatus(simulateSensor, true);
         verify(securityRepository).setAlarmStatus(AlarmStatus.PENDING_ALARM);
     }
 
+    @DisplayName("When AlarmStatus Is Pending and Sensor Activated verify AlarmStatus is Alarm")
     @Test
         //test 2
-    void whenAlarmStatus_AlarmAlreadyPendingAndSensorActivated_ReturnAlarmStatusAlarm() {
+    void whenAlarmStatus_IsAlreadyPendingAndSensorIsActivated_AlarmStatusAlarm() {
         when(securityService.getAlarmStatus()).thenReturn(AlarmStatus.PENDING_ALARM);
         securityService.changeSensorActivationStatus(simulateSensor, true);
         verify(securityRepository, atMost(2)).setAlarmStatus(AlarmStatus.ALARM); //first call up
     }
 
     @Test //tests 3
-    public void whenPendingAlarmStatus_andArmingStatusArmed_ReturnNoAlarmStatus() {
+    public void whenAlarmStatusIsPending_andArmingStatusIsArmed_NoAlarmStatus() {
         when(securityRepository.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
         when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.PENDING_ALARM);
         simulateSensor.setActive(false);
@@ -88,7 +94,7 @@ public class SecurityServiceTest {
 
     @Test
         //tests 4
-    void whenAlarmState_alarmActiveAndSensorStateChanges_ReturnStateDoesNotChange() {
+    void whenAlarmState_alarmActiveAndSensorStateChanges_StateDoesNotChange() {
         when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.ALARM);
         simulateSensor.setActive(false);
         securityService.changeSensorActivationStatus(simulateSensor, true);
@@ -99,7 +105,7 @@ public class SecurityServiceTest {
 
     @Test
         //tests 5
-    void whenAlarmState_systemActivatedWhileAlreadyActiveAndAlarmPending_changeToAlarmState() {
+    void whenAlarmState_ActivatedWhileAlreadyActiveAndAlarmPending_changeToAlarmState() {
         when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.PENDING_ALARM);
         securityService.changeSensorActivationStatus(simulateSensor, true);
         ArgumentCaptor<AlarmStatus> captureValue = ArgumentCaptor.forClass(AlarmStatus.class);
@@ -118,7 +124,7 @@ public class SecurityServiceTest {
     void whenAlarmState_imageContainingCatDetectedAndSystemArmed_changeToAlarmStatus() {
         when(localImageService.imageContainsCat(any(), anyFloat())).thenReturn(true);
         when(securityService.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
-        securityService.processImage(mock(BufferedImage.class));
+        securityService.processImage(produceFakeBufferedImage());
         verify(securityRepository).setAlarmStatus(AlarmStatus.ALARM);
     }
 
@@ -127,7 +133,7 @@ public class SecurityServiceTest {
     void whenAlarmState_noCatImageIdentifiedAndSensorsAreInactive_changeToAlarmStatus() {
         when(localImageService.imageContainsCat(any(), anyFloat())).thenReturn(false);
         simulateSensor.setActive(false);
-        securityService.processImage(mock(BufferedImage.class));
+        securityService.processImage(produceFakeBufferedImage());
         verify(securityRepository).setAlarmStatus(AlarmStatus.NO_ALARM);
     }
 
@@ -151,11 +157,12 @@ public class SecurityServiceTest {
 
 
     //Test 11
+    @DisplayName("When System is Armed verify AlarmStatus is ALARM")
     @Test
     public void whenSystemArmedHome_CatIdentified_SetStatusAlarm() {
         when(localImageService.imageContainsCat(any(), anyFloat())).thenReturn(true);
         when(securityService.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
-        securityService.processImage(mock(BufferedImage.class));
+        securityService.processImage(produceFakeBufferedImage());
         verify(securityRepository).setAlarmStatus(AlarmStatus.ALARM);
     }
 
@@ -164,9 +171,7 @@ public class SecurityServiceTest {
     public void whenSystemArmed_SetStatusAlarm() {
         when(localImageService.imageContainsCat(any(), anyFloat())).thenReturn(true);
         when(securityService.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
-
-        final BufferedImage mockImage=mock(BufferedImage.class);
-        securityService.processImage(mockImage);
+        securityService.processImage(produceFakeBufferedImage());
 
         final ArmingStatus currentStatus=securityRepository.getArmingStatus();
         securityService.setArmingStatus(currentStatus);

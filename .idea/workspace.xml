@@ -4,34 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="added spotbug reports">
+    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="SecurityServiceTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/SecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/SecurityServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/css/maven-base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/css/maven-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/css/print.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/dependencies.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/dependency-info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/close.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/collapsed.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/expanded.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/external.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_error_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_info_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_success_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_warning_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/logos/build-by-maven-black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/logos/build-by-maven-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/logos/maven-feather.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/newwindow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/plugin-management.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/plugins.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/project-info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/project-reports.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/spotbugs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/summary.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654439100840</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="SecurityServiceTest">
+      <created>1654500259648</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654500259648</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +306,8 @@
     <MESSAGE value="added screenshot executable_jar.png" />
     <MESSAGE value="added access to run `mvn test` successfully by `open` in module-info.java" />
     <MESSAGE value="added spotbug reports" />
-    <option name="LAST_COMMIT_MESSAGE" value="added spotbug reports" />
+    <MESSAGE value="SecurityServiceTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="SecurityServiceTest" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CatSecurityMultiModule$SecurityServiceTest.ic" NAME="SecurityServiceTest Coverage Results" MODIFIED="1654499792560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
