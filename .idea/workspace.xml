@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="SecurityServiceTest">
+    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="SecurityServiceTest refinement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/SecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/SecurityServiceTest.java" afterDir="false" />
     </list>
@@ -282,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654500259648</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="SecurityServiceTest refinement">
+      <created>1654601330222</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654601330222</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +314,8 @@
     <MESSAGE value="added access to run `mvn test` successfully by `open` in module-info.java" />
     <MESSAGE value="added spotbug reports" />
     <MESSAGE value="SecurityServiceTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="SecurityServiceTest" />
+    <MESSAGE value="SecurityServiceTest refinement" />
+    <option name="LAST_COMMIT_MESSAGE" value="SecurityServiceTest refinement" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CatSecurityMultiModule$SecurityServiceTest.ic" NAME="SecurityServiceTest Coverage Results" MODIFIED="1654499792560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
