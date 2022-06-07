@@ -58,7 +58,7 @@ public class SecurityServiceTest {
         return  mock(BufferedImage.class);
     }
 
-    private static Stream<AlarmStatus> whenAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState(){
+    private static Stream<AlarmStatus> produceAlarmStatus(){
         return  Stream.of(AlarmStatus.ALARM,AlarmStatus.NO_ALARM,AlarmStatus.PENDING_ALARM);
     }
 
@@ -74,7 +74,7 @@ public class SecurityServiceTest {
 
 
     @ParameterizedTest //covers 1
-    @MethodSource("whenSystemArmedReset_setSensorsToInactive")
+    @MethodSource("produceAlarmStatus")
     void whenAlarmStatus_AlarmIsArmedAndSensorIsActivated_setAlarmStatusPending(ArmingStatus armingStatus) {
         when(securityService.getArmingStatus()).thenReturn(armingStatus);
         when(securityService.getAlarmStatus()).thenReturn(AlarmStatus.NO_ALARM);
@@ -154,7 +154,7 @@ public class SecurityServiceTest {
     }
 
     @ParameterizedTest
-    @MethodSource
+    @MethodSource("produceAlarmStatus")
     //test 10
     public void whenSystemArmedReset_setSensorsToInactive (ArmingStatus status) {
         Set<Sensor> sensors=generateSensors();
