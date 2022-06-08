@@ -64,9 +64,6 @@ public class SecurityServiceTest {
         return  Stream.of(AlarmStatus.ALARM,AlarmStatus.NO_ALARM,AlarmStatus.PENDING_ALARM);
     }
 
-    private static  Stream<ArmingStatus> whenSystemArmedReset_setSensorsToInactive(){
-        return Stream.of(ArmingStatus.ARMED_HOME,ArmingStatus.ARMED_HOME);
-    }
 
     @BeforeEach
     void init() {
