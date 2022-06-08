@@ -1,14 +1,16 @@
-package com.udacity.catpoint.security;
+package com.udacity.catpoint.security.service;
 
 import com.udacity.catpoint.core.AlarmStatus;
 import com.udacity.catpoint.core.ArmingStatus;
 import com.udacity.catpoint.core.Sensor;
 import com.udacity.catpoint.core.SensorType;
+import com.udacity.catpoint.security.repository.SecurityRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.EnumSource;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
@@ -74,7 +76,7 @@ public class SecurityServiceTest {
 
 
     @ParameterizedTest //covers 1
-    @MethodSource("produceAlarmStatus")
+    @EnumSource(value = ArmingStatus.class,names = {"ARMED_HOME","ARMED_AWAY"})
     void whenAlarmStatus_AlarmIsArmedAndSensorIsActivated_setAlarmStatusPending(ArmingStatus armingStatus) {
         when(securityService.getArmingStatus()).thenReturn(armingStatus);
         when(securityService.getAlarmStatus()).thenReturn(AlarmStatus.NO_ALARM);
@@ -122,7 +124,7 @@ public class SecurityServiceTest {
     }
 
     @ParameterizedTest //tests 6
-    @MethodSource
+    @MethodSource("produceAlarmStatus")
     void whenAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState(AlarmStatus alarmStatus) {
         securityService.changeSensorActivationStatus(simulateSensor, false);
         verify(securityRepository, never()).setAlarmStatus(alarmStatus);
@@ -154,7 +156,7 @@ public class SecurityServiceTest {
     }
 
     @ParameterizedTest
-    @MethodSource("produceAlarmStatus")
+    @EnumSource(value = ArmingStatus.class,names = {"ARMED_AWAY","ARMED_HOME"})
     //test 10
     public void whenSystemArmedReset_setSensorsToInactive (ArmingStatus status) {
         Set<Sensor> sensors=generateSensors();

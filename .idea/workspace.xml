@@ -4,7 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="spotbug report" />
+    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="spotbug report">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/DisplayPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/DisplayPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ImagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ImagePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/SensorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/SensorPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/LocalImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/service/LocalImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/LocalImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/service/LocalImageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/PretendDatabaseSecurityRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/repository/PretendDatabaseSecurityRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/SecurityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/repository/SecurityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/service/SecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/SecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/service/SecurityServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/css/maven-base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/css/maven-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/css/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/dependencies.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/dependency-info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/collapsed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/expanded.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/external.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_error_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_info_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_success_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_warning_sml.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/logos/build-by-maven-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/logos/build-by-maven-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/logos/maven-feather.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/images/newwindow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/plugin-management.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/plugins.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/project-info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/project-reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/spotbugs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/target/site/summary.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,8 +112,8 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.udacity.catpoint.security" />
       <recent name="com.udacity.catpoint.security.service" />
+      <recent name="com.udacity.catpoint.security" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.udacity.catpoint.security" />
@@ -101,12 +141,12 @@
       <module name="security" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.udacity.catpoint.security.*" />
+          <option name="PATTERN" value="com.udacity.catpoint.security.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.udacity.catpoint.security" />
-      <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.security.SecurityServiceTest" />
+      <option name="PACKAGE_NAME" value="com.udacity.catpoint.security.service" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.security.service.SecurityServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,12 +156,12 @@
       <module name="security" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.udacity.catpoint.security.*" />
+          <option name="PATTERN" value="com.udacity.catpoint.security.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.udacity.catpoint.security" />
-      <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.security.SecurityServiceTest" />
+      <option name="PACKAGE_NAME" value="com.udacity.catpoint.security.service" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.security.service.SecurityServiceTest" />
       <option name="METHOD_NAME" value="whenAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState(com.udacity.catpoint.core.AlarmStatus)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -132,12 +172,12 @@
       <module name="security" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.udacity.catpoint.security.*" />
+          <option name="PATTERN" value="com.udacity.catpoint.security.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.udacity.catpoint.security" />
-      <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.security.SecurityServiceTest" />
+      <option name="PACKAGE_NAME" value="com.udacity.catpoint.security.service" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.security.service.SecurityServiceTest" />
       <option name="METHOD_NAME" value="whenAlarmState_systemActivatedWhileAlreadyActiveAndAlarmPending_changeToAlarmState" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -295,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654602522571</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="spotbug report">
+      <created>1654617185210</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1654617185210</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
