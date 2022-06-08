@@ -4,46 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="spotbug report">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ControlPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/DisplayPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/DisplayPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ImagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ImagePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/SensorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/SensorPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/LocalImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/service/LocalImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/LocalImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/service/LocalImageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/PretendDatabaseSecurityRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/repository/PretendDatabaseSecurityRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/SecurityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/repository/SecurityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/service/SecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/SecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/service/SecurityServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/css/maven-base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/css/maven-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/css/print.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/dependencies.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/dependency-info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/close.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/collapsed.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/expanded.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/external.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_error_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_info_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_success_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/icon_warning_sml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/logos/build-by-maven-black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/logos/build-by-maven-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/logos/maven-feather.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/images/newwindow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/plugin-management.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/plugins.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/project-info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/project-reports.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/spotbugs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/target/site/summary.html" beforeDir="false" />
+    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="added EnumSource">
+      <change beforePath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/service/SecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/service/SecurityServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +130,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecurityServiceTest.whenAlarmState_systemActivatedWhileAlreadyActiveAndAlarmPending_changeToAlarmState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SecurityServiceTest.whenAlarmStatusIsAlarm_setAlarmStatusPending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="security" />
       <extension name="coverage">
         <pattern>
@@ -178,7 +140,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.udacity.catpoint.security.service" />
       <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.security.service.SecurityServiceTest" />
-      <option name="METHOD_NAME" value="whenAlarmState_systemActivatedWhileAlreadyActiveAndAlarmPending_changeToAlarmState" />
+      <option name="METHOD_NAME" value="whenAlarmStatusIsAlarm_setAlarmStatusPending" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -222,17 +184,17 @@
     <list>
       <item itemvalue="AWS Lambda.[Local] com.udacity.catpoint.security.SecurityServiceTest::systemArmedResetSensorsToInactive" />
       <item itemvalue="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+      <item itemvalue="JUnit.SecurityServiceTest.whenAlarmStatusIsAlarm_setAlarmStatusPending" />
       <item itemvalue="JUnit.SecurityServiceTest.whenAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState" />
-      <item itemvalue="JUnit.SecurityServiceTest.whenAlarmState_systemActivatedWhileAlreadyActiveAndAlarmPending_changeToAlarmState" />
       <item itemvalue="JUnit.SecurityServiceTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SecurityServiceTest" />
+        <item itemvalue="JUnit.SecurityServiceTest.whenAlarmStatusIsAlarm_setAlarmStatusPending" />
         <item itemvalue="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="AWS Lambda.[Local] com.udacity.catpoint.security.SecurityServiceTest::systemArmedResetSensorsToInactive" />
         <item itemvalue="JUnit.SecurityServiceTest.whenAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState" />
-        <item itemvalue="JUnit.SecurityServiceTest.whenAlarmState_systemActivatedWhileAlreadyActiveAndAlarmPending_changeToAlarmState" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +304,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654617185210</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added --add-open">
+      <created>1654671645980</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1654671645980</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added EnumSource">
+      <created>1654671694609</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1654671694609</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,11 +345,13 @@
     <MESSAGE value="SecurityServiceTest" />
     <MESSAGE value="SecurityServiceTest refinement" />
     <MESSAGE value="spotbug report" />
-    <option name="LAST_COMMIT_MESSAGE" value="spotbug report" />
+    <MESSAGE value="added --add-open" />
+    <MESSAGE value="added EnumSource" />
+    <option name="LAST_COMMIT_MESSAGE" value="added EnumSource" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CatSecurityMultiModule$SecurityServiceTest.ic" NAME="SecurityServiceTest Coverage Results" MODIFIED="1654602286339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.udacity.catpoint.security.*</FILTER>
+    <SUITE FILE_PATH="coverage/CatSecurityMultiModule$SecurityServiceTest.ic" NAME="SecurityServiceTest Coverage Results" MODIFIED="1654671722044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.udacity.catpoint.security.service.*</FILTER>
     </SUITE>
   </component>
 </project>

@@ -99,6 +99,13 @@ public class SecurityServiceTest {
         securityService.changeSensorActivationStatus(simulateSensor, false);
         verify(securityRepository).setAlarmStatus(AlarmStatus.NO_ALARM);
     }
+    @Test
+    public void whenAlarmStatusIsAlarm_setAlarmStatusPending(){
+        when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.ALARM);
+        simulateSensor.setActive(true);
+        securityService.changeSensorActivationStatus(simulateSensor, false);
+        verify(securityRepository).setAlarmStatus(AlarmStatus.PENDING_ALARM);
+    }
 
     @Test
         //tests 4
