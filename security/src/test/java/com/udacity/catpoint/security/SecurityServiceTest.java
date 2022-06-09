@@ -90,6 +90,16 @@ public class SecurityServiceTest {
         verify(securityRepository).setAlarmStatus(AlarmStatus.NO_ALARM);
     }
 
+
+    @Test //tests 3
+    public void whenPendingAlarmStatus_andArmingStatusArmed_SetPendingAlarmStatus() {
+        when(securityRepository.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
+        when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.ALARM);
+        simulatorSensor.setActive(false);
+        securityService.changeSensorActivationStatus(simulatorSensor, true);
+        securityService.changeSensorActivationStatus(simulatorSensor, false);
+        verify(securityRepository).setAlarmStatus(AlarmStatus.PENDING_ALARM);
+    }
     @Test
         //tests 4
     void whenAlarmState_alarmActiveAndSensorStateChanges_ReturnStateDoesNotChange() {
@@ -148,7 +158,6 @@ public class SecurityServiceTest {
     @EnumSource(value = ArmingStatus.class, names = {"ARMED_AWAY", "ARMED_HOME"})
     void whenSensors_systemArmed_deactivateAllSensors(ArmingStatus armingStatus){
         Set<Sensor> sensors = generateSensors(4);
-        when(securityRepository.getSensors()).thenReturn(sensors);
         securityService.setArmingStatus(armingStatus);
         sensors.forEach(it -> assertEquals(it.getActive(), false));
     }
