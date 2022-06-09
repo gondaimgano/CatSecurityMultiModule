@@ -7,6 +7,7 @@ import com.udacity.catpoint.core.SensorType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.function.Executable;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import org.mockito.ArgumentCaptor;
@@ -14,8 +15,12 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.awt.image.BufferedImage;
-import java.util.UUID;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
@@ -38,6 +43,13 @@ public class SecurityServiceTest {
 
     private Sensor generateSensor() {
         return new Sensor(randomString, SensorType.DOOR);
+    }
+
+    Set<Sensor> generateSensors(int count) {
+        if(count<0)
+            return new HashSet<>();
+        return IntStream.range(0,count).mapToObj(i->
+                generateSensor()).collect(Collectors.toSet());
     }
 
     @BeforeEach
@@ -130,9 +142,22 @@ public class SecurityServiceTest {
     }
 
 
+    @ParameterizedTest //tests 10
+    @EnumSource(value = ArmingStatus.class, names = {"ARMED_AWAY", "ARMED_HOME"})
+    void whenSensors_systemArmed_deactivateAllSensors(ArmingStatus armingStatus){
+        Set<Sensor> sensors = generateSensors(4);
+        when(securityRepository.getSensors()).thenReturn(sensors);
+        securityService.setArmingStatus(armingStatus);
+        sensors.forEach(it -> assertEquals(it.getActive(), false));
+    }
+
+
+
+
+
     //Test 11
     @Test
-    public void systemArmedHomeCatIdentifiedSetStatusAlarm() {
+    public void whenSystemArmed_HomeCatIdentified_setStatusAlarm() {
         when(imageService.imageContainsCat(any(), anyFloat())).thenReturn(true);
         when(securityService.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
         securityService.processImage(mock(BufferedImage.class));
@@ -141,7 +166,7 @@ public class SecurityServiceTest {
 
     //Test 12
     @Test
-    public void systemArmedSetStatusAlarm() {
+    public void whenSystemArmed_setStatusAlarm() {
         when(securityService.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
         when(imageService.imageContainsCat(any(), anyFloat())).thenReturn(true);
         securityService.processImage(mock(BufferedImage.class));
