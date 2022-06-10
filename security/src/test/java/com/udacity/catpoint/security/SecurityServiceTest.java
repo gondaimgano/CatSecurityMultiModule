@@ -94,7 +94,6 @@ public class SecurityServiceTest {
         Sensor last = allSensors.iterator().next();
         last.setActive(true);
         when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.PENDING_ALARM);
-        //deactivate this sensor
         securityService.changeSensorActivationStatus(last, false);
         ArgumentCaptor<AlarmStatus> captor = ArgumentCaptor.forClass(AlarmStatus.class);
         verify(securityRepository, atMostOnce()).setAlarmStatus(captor.capture());
