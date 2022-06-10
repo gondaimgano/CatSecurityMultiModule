@@ -1,4 +1,4 @@
-package com.udacity.catpoint.security.service;
+package com.udacity.catpoint.security;
 
 import java.awt.image.BufferedImage;
 import java.util.Random;

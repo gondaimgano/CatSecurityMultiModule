@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="fixed bug issues on SecurityService.java">
+    <list default="true" id="47942e3a-3807-43af-9033-9961917db51b" name="Changes" comment="fixing bug issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/CatpointGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/DisplayPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/DisplayPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ImagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/ImagePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/SensorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/udacity/catpoint/app/SensorPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/repository/PretendDatabaseSecurityRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/PretendDatabaseSecurityRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/repository/SecurityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/SecurityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/service/LocalImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/LocalImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/service/LocalImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/LocalImageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/service/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/udacity/catpoint/security/SecurityService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/service/SecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/service/SecurityServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/SecurityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/SecurityServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/test/java/com/udacity/catpoint/security/service/SecurityServiceTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,30 +48,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20220531_0005&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gondai.mgano/IntelliJIDEAProjects/CatSecurityMultiModule/app/src/main/java/com/udacity/catpoint/app&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.idea.maven.wizards.archetype.MavenCatalogsConfigurable&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20220531_0005",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "dart.analysis.tool.window.visible": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-18",
+    "last_opened_file_path": "C:/Users/gondai.mgano/IntelliJIDEAProjects/CatSecurityMultiModule/app/src/main/java/com/udacity/catpoint/app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gondai.mgano\IntelliJIDEAProjects\CatSecurityMultiModule\app\src\main\java\com\udacity\catpoint\app" />
@@ -77,8 +88,8 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.udacity.catpoint.security.service" />
       <recent name="com.udacity.catpoint.security" />
+      <recent name="com.udacity.catpoint.security.service" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.udacity.catpoint.security" />
@@ -101,12 +112,27 @@
       <command value="mvn install site" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SecurityServiceTest">
+  <component name="RunManager" selected="JUnit.SecurityServiceTest (1)">
+    <configuration name="SecurityServiceTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.catpoint.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.catpoint.security" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.security.SecurityServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SecurityServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="security" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.udacity.catpoint.security.service.*" />
+          <option name="PATTERN" value="com.udacity.catpoint.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,27 +143,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecurityServiceTest.whenAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="security" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.udacity.catpoint.security.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.udacity.catpoint.security.service" />
-      <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.security.service.SecurityServiceTest" />
-      <option name="METHOD_NAME" value="whenAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState(com.udacity.catpoint.core.AlarmStatus)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SecurityServiceTest.whenAlarmStatusIsAlarm_setAlarmStatusPending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="security" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.udacity.catpoint.security.service.*" />
+          <option name="PATTERN" value="com.udacity.catpoint.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,17 +197,17 @@
     <list>
       <item itemvalue="AWS Lambda.[Local] com.udacity.catpoint.security.SecurityServiceTest::systemArmedResetSensorsToInactive" />
       <item itemvalue="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+      <item itemvalue="JUnit.SecurityServiceTest (1)" />
       <item itemvalue="JUnit.SecurityServiceTest.whenAlarmStatusIsAlarm_setAlarmStatusPending" />
-      <item itemvalue="JUnit.SecurityServiceTest.whenAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState" />
       <item itemvalue="JUnit.SecurityServiceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SecurityServiceTest (1)" />
         <item itemvalue="JUnit.SecurityServiceTest" />
         <item itemvalue="JUnit.SecurityServiceTest.whenAlarmStatusIsAlarm_setAlarmStatusPending" />
         <item itemvalue="JAR Application.app-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="AWS Lambda.[Local] com.udacity.catpoint.security.SecurityServiceTest::systemArmedResetSensorsToInactive" />
-        <item itemvalue="JUnit.SecurityServiceTest.whenAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654841791745</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fixing bug issue">
+      <created>1654845216083</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1654845216083</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +390,8 @@
     <MESSAGE value="added EnumSource" />
     <MESSAGE value="added test case" />
     <MESSAGE value="fixed bug issues on SecurityService.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug issues on SecurityService.java" />
+    <MESSAGE value="fixing bug issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing bug issue" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CatSecurityMultiModule$SecurityServiceTest.ic" NAME="SecurityServiceTest Coverage Results" MODIFIED="1654843801444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

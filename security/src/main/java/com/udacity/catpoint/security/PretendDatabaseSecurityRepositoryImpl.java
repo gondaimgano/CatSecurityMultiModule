@@ -1,4 +1,4 @@
-package com.udacity.catpoint.security.repository;
+package com.udacity.catpoint.security;
 
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;

@@ -1,10 +1,9 @@
-package com.udacity.catpoint.security.service;
+package com.udacity.catpoint.security;
 
 import com.udacity.catpoint.core.AlarmStatus;
 import com.udacity.catpoint.core.ArmingStatus;
 import com.udacity.catpoint.core.StatusListener;
 import com.udacity.catpoint.core.Sensor;
-import com.udacity.catpoint.security.repository.SecurityRepository;
 
 import java.awt.image.BufferedImage;
 import java.util.HashSet;

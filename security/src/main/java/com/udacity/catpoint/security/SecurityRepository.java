@@ -1,4 +1,4 @@
-package com.udacity.catpoint.security.repository;
+package com.udacity.catpoint.security;
 
 import com.udacity.catpoint.core.AlarmStatus;
 import com.udacity.catpoint.core.ArmingStatus;

@@ -4,9 +4,6 @@ import com.udacity.catpoint.core.AlarmStatus;
 import com.udacity.catpoint.core.ArmingStatus;
 import com.udacity.catpoint.core.Sensor;
 import com.udacity.catpoint.core.SensorType;
-import com.udacity.catpoint.security.repository.SecurityRepository;
-import com.udacity.catpoint.security.service.LocalImageService;
-import com.udacity.catpoint.security.service.SecurityService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -92,22 +89,32 @@ public class SecurityServiceTest {
 
 
     @Test //tests 3
-    public void whenPendingAlarmStatus_andArmingStatusArmed_SetPendingAlarmStatus() {
-        when(securityRepository.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
-        when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.ALARM);
-        simulatorSensor.setActive(false);
-        securityService.changeSensorActivationStatus(simulatorSensor, true);
-        securityService.changeSensorActivationStatus(simulatorSensor, false);
-        verify(securityRepository).setAlarmStatus(AlarmStatus.PENDING_ALARM);
+    void changeAlarmStatus_alarmPendingAndAllSensorsInactive_changeToNoAlarm(){
+        Set<Sensor> allSensors = generateSensors(4);
+        Sensor last = allSensors.iterator().next();
+        last.setActive(true);
+        when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.PENDING_ALARM);
+        //deactivate this sensor
+        securityService.changeSensorActivationStatus(last, false);
+        ArgumentCaptor<AlarmStatus> captor = ArgumentCaptor.forClass(AlarmStatus.class);
+        verify(securityRepository, atMostOnce()).setAlarmStatus(captor.capture());
+        assertEquals(captor.getValue(), AlarmStatus.NO_ALARM);
     }
     @Test
         //tests 4
-    void whenAlarmState_alarmActiveAndSensorStateChanges_ReturnStateDoesNotChange() {
-        when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.ALARM);
+    void changeAlarmState_alarmActiveAndSensorStateChanges_stateNotAffected() {
         simulatorSensor.setActive(false);
+        when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.ALARM);
         securityService.changeSensorActivationStatus(simulatorSensor, true);
-        verify(securityRepository, never()).setAlarmStatus(AlarmStatus.NO_ALARM);
-        verify(securityRepository, never()).setAlarmStatus(AlarmStatus.PENDING_ALARM);
+        verify(securityRepository, never()).setAlarmStatus(any(AlarmStatus.class));
+        ArgumentCaptor<Sensor> captor = ArgumentCaptor.forClass(Sensor.class);
+        verify(securityRepository, atMostOnce()).updateSensor(captor.capture());
+        assertEquals(captor.getValue(), simulatorSensor);
+        simulatorSensor.setActive(true);
+        securityService.changeSensorActivationStatus(simulatorSensor, false);
+        verify(securityRepository, never()).setAlarmStatus(any(AlarmStatus.class));
+        verify(securityRepository, atMost(2)).updateSensor(captor.capture());
+        assertEquals(captor.getValue(), simulatorSensor);
     }
 
 
