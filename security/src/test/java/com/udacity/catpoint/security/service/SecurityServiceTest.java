@@ -91,26 +91,23 @@ public class SecurityServiceTest {
     }
 
     @Test //tests 3
-    public void whenAlarmStatusIsPending_andArmingStatusIsArmed_NoAlarmStatus() {
-        when(securityRepository.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
+    void changeAlarmStatus_alarmPendingAndAllSensorsInactive_changeToNoAlarm(){
+        Set<Sensor> allSensors = generateSensors();
+        Sensor last = allSensors.iterator().next();
+        last.setActive(true);
         when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.PENDING_ALARM);
-        simulateSensor.setActive(false);
-        securityService.changeSensorActivationStatus(simulateSensor, true);
-        securityService.changeSensorActivationStatus(simulateSensor, false);
-        verify(securityRepository).setAlarmStatus(AlarmStatus.NO_ALARM);
+        securityService.changeSensorActivationStatus(last, false);
+        ArgumentCaptor<AlarmStatus> captor = ArgumentCaptor.forClass(AlarmStatus.class);
+        verify(securityRepository, atMostOnce()).setAlarmStatus(captor.capture());
+        assertEquals(captor.getValue(), AlarmStatus.NO_ALARM);
     }
-    @Test
-    public void whenAlarmStatusIsAlarm_setAlarmStatusPending(){
-        when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.ALARM);
-        simulateSensor.setActive(true);
-        securityService.changeSensorActivationStatus(simulateSensor, false);
-        verify(securityRepository).setAlarmStatus(AlarmStatus.PENDING_ALARM);
-    }
+
 
     @Test
         //tests 4
     void whenAlarmState_alarmActiveAndSensorStateChanges_StateDoesNotChange() {
         when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.ALARM);
+       doNothing().when(securityRepository).updateSensor(simulateSensor);
         simulateSensor.setActive(false);
         securityService.changeSensorActivationStatus(simulateSensor, true);
         verify(securityRepository, never()).setAlarmStatus(AlarmStatus.NO_ALARM);
