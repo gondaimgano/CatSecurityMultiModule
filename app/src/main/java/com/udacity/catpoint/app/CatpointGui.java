@@ -1,10 +1,11 @@
 package com.udacity.catpoint.app;
 
 
+import com.udacity.catpoint.image.AwsImageService;
+import com.udacity.catpoint.image.FakeImageService;
+import com.udacity.catpoint.image.ImageService;
 import com.udacity.catpoint.security.PretendDatabaseSecurityRepositoryImpl;
 import com.udacity.catpoint.security.SecurityRepository;
-import com.udacity.catpoint.security.LocalImageService;
-import com.udacity.catpoint.security.LocalImageServiceImpl;
 import com.udacity.catpoint.security.SecurityService;
 import net.miginfocom.swing.MigLayout;
 
@@ -18,7 +19,7 @@ import javax.swing.*;
  */
 public class CatpointGui extends JFrame {
     private SecurityRepository securityRepository = new PretendDatabaseSecurityRepositoryImpl();
-    private LocalImageService imageService = new LocalImageServiceImpl();
+    private ImageService imageService = new FakeImageService();
     private SecurityService securityService = new SecurityService(securityRepository, imageService);
     private DisplayPanel displayPanel = new DisplayPanel(securityService);
     private ControlPanel controlPanel = new ControlPanel(securityService);

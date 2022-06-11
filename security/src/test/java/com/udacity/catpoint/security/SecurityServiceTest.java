@@ -4,6 +4,7 @@ import com.udacity.catpoint.core.AlarmStatus;
 import com.udacity.catpoint.core.ArmingStatus;
 import com.udacity.catpoint.core.Sensor;
 import com.udacity.catpoint.core.SensorType;
+import com.udacity.catpoint.image.ImageService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -33,8 +34,8 @@ public class SecurityServiceTest {
     @Mock
     SecurityRepository securityRepository;
 
-    @Mock
-    LocalImageService imageService;
+   @Mock
+    ImageService imageService;
 
     private
     SecurityService securityService;
@@ -146,7 +147,7 @@ public class SecurityServiceTest {
     @Test
         //tests 8
     void whenAlarmState_noCatImageIdentifiedAndSensorsAreInactive_changeToAlarmStatus() {
-        when(imageService.imageContainsCat(any(), anyFloat())).thenReturn(false);
+      //  when(imageService.imageContainsCat(any(), anyFloat())).thenReturn(false);
         simulatorSensor.setActive(false);
         securityService.processImage(mock(BufferedImage.class));
         verify(securityRepository).setAlarmStatus(AlarmStatus.NO_ALARM);
@@ -175,7 +176,7 @@ public class SecurityServiceTest {
     //Test 11
     @Test
     public void whenSystemArmed_HomeCatIdentified_setStatusAlarm() {
-        when(imageService.imageContainsCat(any(), anyFloat())).thenReturn(true);
+       when(imageService.imageContainsCat(any(), anyFloat())).thenReturn(true);
         when(securityService.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
         securityService.processImage(mock(BufferedImage.class));
         verify(securityRepository).setAlarmStatus(AlarmStatus.ALARM);

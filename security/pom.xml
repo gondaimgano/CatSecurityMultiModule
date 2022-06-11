@@ -24,6 +24,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.udacity.catpoint.image</groupId>
+            <artifactId>image</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>com.udacity.catpoint.core</groupId>
             <artifactId>core</artifactId>
             <version>1.0-SNAPSHOT</version>
