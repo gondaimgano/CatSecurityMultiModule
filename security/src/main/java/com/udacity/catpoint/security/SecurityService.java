@@ -8,7 +8,10 @@ import com.udacity.catpoint.image.ImageService;
 
 import java.awt.image.BufferedImage;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ConcurrentSkipListSet;
+import java.util.stream.Collectors;
 
 /**
  * Service that receives information about changes to the security system. Responsible for
@@ -36,8 +39,32 @@ public class SecurityService {
     public void setArmingStatus(ArmingStatus armingStatus) {
         if(armingStatus == ArmingStatus.DISARMED) {
             setAlarmStatus(AlarmStatus.NO_ALARM);
+        }else if (systemArmedContains(armingStatus)){
+            setActivationStatusToFalse(produceActiveSensors());
         }
         securityRepository.setArmingStatus(armingStatus);
+    }
+
+   private Set<Sensor> produceActiveSensors(){
+        return getSensors()
+                .stream()
+                .filter(Sensor::getActive)
+                .collect(Collectors.toSet());
+    }
+
+    private void setActivationStatusToFalse(Set<Sensor> sensors) {
+
+        ConcurrentSkipListSet<Sensor> copied = new ConcurrentSkipListSet<>(sensors);
+
+        for (Sensor sensor : copied) {
+            sensor.setActive(true);
+            changeSensorActivationStatus(sensor, false);
+        }
+    }
+
+    boolean systemArmedContains(ArmingStatus armingStatus){
+        return List.of(ArmingStatus.ARMED_HOME, ArmingStatus.ARMED_AWAY)
+                .contains(armingStatus);
     }
 
     /**
@@ -86,6 +113,7 @@ public class SecurityService {
         switch(securityRepository.getAlarmStatus()) {
             case NO_ALARM -> setAlarmStatus(AlarmStatus.PENDING_ALARM);
             case PENDING_ALARM -> setAlarmStatus(AlarmStatus.ALARM);
+            default -> {}
         }
     }
 
@@ -96,6 +124,7 @@ public class SecurityService {
         switch(securityRepository.getAlarmStatus()) {
             case PENDING_ALARM -> setAlarmStatus(AlarmStatus.NO_ALARM);
             case ALARM -> setAlarmStatus(AlarmStatus.PENDING_ALARM);
+            default -> {}
         }
     }
 
