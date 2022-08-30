@@ -75,7 +75,7 @@ public class SecurityService {
     private void catDetected(Boolean cat) {
         if(cat && getArmingStatus() == ArmingStatus.ARMED_HOME) {
             setAlarmStatus(AlarmStatus.ALARM);
-        } else {
+        } else if (!cat && checkIfAllSensorsAreInactive()){
             setAlarmStatus(AlarmStatus.NO_ALARM);
         }
 
@@ -101,6 +101,12 @@ public class SecurityService {
     public void setAlarmStatus(AlarmStatus status) {
         securityRepository.setAlarmStatus(status);
         statusListeners.forEach(sl -> sl.notify(status));
+    }
+
+    private boolean checkIfAllSensorsAreInactive() {
+        return getSensors()
+                .stream()
+                .noneMatch(Sensor::getActive);
     }
 
     /**
